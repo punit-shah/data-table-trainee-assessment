@@ -9,10 +9,14 @@
   <link href="main.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 <body>
+  <h1>data-table-trainee-assessment</h1>
+  <div class="data-table-container"></div>
+
   <script src="jquery-2.1.1.js"></script>
+  <script src="data-table.js"></script>
   <script>
     $.getJSON('data.json', function (data) {
-      console.log(data);
+      makeTable('.data-table-container', data);
     });
   </script>
 </body>
