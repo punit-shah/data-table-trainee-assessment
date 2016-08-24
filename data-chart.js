@@ -44,7 +44,7 @@ function getChartDatasets(data) {
             lineTension: 0.1,
             pointRadius: 1,
             pointHoverRadius: 5,
-            pointHitRadius: 20,
+            pointHitRadius: 50,
             spanGaps: false,
         };
 
@@ -68,6 +68,17 @@ function makeChart(data) {
     var data = getChartData(data);
     var chart = new Chart(canvas, {
         type: 'line',
-        data: data
+        data: data,
+        options: {
+            legend: {
+                position: 'bottom',
+                labels: {
+                    boxWidth: 10
+                },
+            },
+            tooltips: {
+                'mode': 'x-axis',
+            },
+        },
     });
 }
