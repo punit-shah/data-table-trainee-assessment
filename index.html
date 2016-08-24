@@ -9,15 +9,32 @@
   <link href="main.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <h1>data-table-trainee-assessment</h1>
-  <div class="data-table-container"></div>
-  <canvas id="data-chart"></canvas>
+  <div class="container">
+    <h1>data-table-trainee-assessment</h1>
+  </div>
+
+  <div class="tab-wrapper">
+    <ul class="tabs container">
+      <li class="tab" data-shows=".data-table-container">Table</li>
+      <li class="tab" data-shows="#data-chart">Chart</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="data-table-container" data-tab-content></div>
+  </div>
+
+  <div class="container">
+    <canvas id="data-chart" data-tab-content></canvas>
+  </div>
 
   <script src="jquery-2.1.1.js"></script>
   <script src="Chart.min.js"></script>
   <script src="data-table.js"></script>
   <script src="data-chart.js"></script>
+  <script src="tabs.js"></script>
   <script>
+    initTabs();
     $.getJSON('data.json', function (data) {
       makeTable('.data-table-container', data);
       makeChart(data);

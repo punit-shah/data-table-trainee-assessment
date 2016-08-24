@@ -1,5 +1,5 @@
 html {
-    font-size: 16px;
+    font-size: 1em;
     box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -9,14 +9,17 @@ html {
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, FreeSans, sans-serif;
     width: 100%;
+    margin: 0;
+}
+
+.container {
     max-width: 976px;
     margin: 0 auto;
-    padding: 8px;
 }
 
 .data-table-container {
     overflow: scroll;
-    margin: 16px 0;
+    margin: 1em 0;
 }
 
 .data-table {
@@ -29,4 +32,35 @@ body {
 .data-table td {
     padding: 8px;
     border: solid 1px #ddd;
+}
+
+.tab-wrapper {
+    background-color: #f2f2f2;
+    margin-bottom: 1em;
+}
+
+.tabs {
+    list-style: none;
+    padding: 1em 0 0;
+}
+
+.tab {
+    display: inline-block;
+    width: 150px;
+    background-color: #ddd;
+    text-align: center;
+    padding: 12px;
+    margin-right: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tab:hover,
+.tab:active,
+.tab:focus {
+    background-color: #aaa;
+}
+
+.tab.selected {
+    background-color: #fff;
 }
