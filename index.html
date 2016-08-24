@@ -11,12 +11,16 @@
 <body>
   <h1>data-table-trainee-assessment</h1>
   <div class="data-table-container"></div>
+  <canvas id="data-chart"></canvas>
 
   <script src="jquery-2.1.1.js"></script>
+  <script src="Chart.min.js"></script>
   <script src="data-table.js"></script>
+  <script src="data-chart.js"></script>
   <script>
     $.getJSON('data.json', function (data) {
       makeTable('.data-table-container', data);
+      makeChart(data);
     });
   </script>
 </body>

@@ -16,6 +16,7 @@ body {
 
 .data-table-container {
     overflow: scroll;
+    margin: 16px 0;
 }
 
 .data-table {
