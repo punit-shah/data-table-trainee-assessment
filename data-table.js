@@ -1,14 +1,4 @@
-function makeTable(element, data) {
-  var channels = {
-    'bbcone': 'BBC One',
-    'bbctwo': 'BBC Two',
-    'bbcthree': 'BBC Three',
-    'bbcfour': 'BBC Four',
-    'bbcnews24': 'BBC News 24',
-    'cbbc': 'CBBC',
-    'cbeebies': 'Cbeebies',
-  };
-
+function makeTable(element, data, channels) {
   var $table = $('<table/>')
     .addClass('data-table')
     .append(getTableHeader(channels))

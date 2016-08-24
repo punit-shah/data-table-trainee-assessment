@@ -35,9 +35,20 @@
   <script src="tabs.js"></script>
   <script>
     initTabs();
+
+    var channels = {
+      bbcone: 'BBC One',
+      bbctwo: 'BBC Two',
+      bbcthree: 'BBC Three',
+      bbcfour: 'BBC Four',
+      bbcnews24: 'BBC News 24',
+      cbbc: 'CBBC',
+      cbeebies: 'Cbeebies',
+    };
+
     $.getJSON('data.json', function (data) {
-      makeTable('.data-table-container', data);
-      makeChart(data);
+      makeTable('.data-table-container', data, channels);
+      makeChart('#data-chart', data, channels);
     });
   </script>
 </body>

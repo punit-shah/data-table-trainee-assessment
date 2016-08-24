@@ -1,17 +1,27 @@
-var channels = {
-    bbcone: 'BBC One',
-    bbctwo: 'BBC Two',
-    bbcthree: 'BBC Three',
-    bbcfour: 'BBC Four',
-    bbcnews24: 'BBC News 24',
-    cbbc: 'CBBC',
-    cbeebies: 'Cbeebies',
-};
+function makeChart(canvas, data, channels) {
+    var canvas = $(canvas);
+    var data = getChartData(data, channels);
+    var chart = new Chart(canvas, {
+        type: 'line',
+        data: data,
+        options: {
+            legend: {
+                position: 'bottom',
+                labels: {
+                    boxWidth: 10
+                },
+            },
+            tooltips: {
+                'mode': 'x-axis',
+            },
+        },
+    });
+}
 
 function getChartData(data) {
     return {
         labels: getChartLabels(data),
-        datasets: getChartDatasets(data),
+        datasets: getChartDatasets(data, channels),
     };
 }
 
@@ -25,7 +35,7 @@ function getChartLabels(data) {
     return labels;
 }
 
-function getChartDatasets(data) {
+function getChartDatasets(data, channels) {
     var datasets = [];
 
     var colors = {
@@ -61,24 +71,4 @@ function getChartDatasets(data) {
     }
 
     return datasets;
-}
-
-function makeChart(data) {
-    var canvas = $('#data-chart');
-    var data = getChartData(data);
-    var chart = new Chart(canvas, {
-        type: 'line',
-        data: data,
-        options: {
-            legend: {
-                position: 'bottom',
-                labels: {
-                    boxWidth: 10
-                },
-            },
-            tooltips: {
-                'mode': 'x-axis',
-            },
-        },
-    });
 }
