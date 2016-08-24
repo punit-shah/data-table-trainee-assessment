@@ -1,66 +1,66 @@
 html {
-    font-size: 1em;
-    box-sizing: border-box;
+  font-size: 1em;
+  box-sizing: border-box;
 }
 *, *:before, *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, FreeSans, sans-serif;
-    width: 100%;
-    margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, FreeSans, sans-serif;
+  width: 100%;
+  margin: 0;
 }
 
 .container {
-    max-width: 976px;
-    margin: 0 auto;
+  max-width: 976px;
+  margin: 0 auto;
 }
 
 .data-table-container {
-    overflow: scroll;
-    margin: 1em 0;
+  overflow: scroll;
+  margin: 1em 0;
 }
 
 .data-table {
-    width: 100%;
-    border-spacing: 0;
-    border-collapse: collapse;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
 .data-table th,
 .data-table td {
-    padding: 8px;
-    border: solid 1px #ddd;
+  padding: 8px;
+  border: solid 1px #ddd;
 }
 
 .tab-wrapper {
-    background-color: #f2f2f2;
-    margin-bottom: 1em;
+  background-color: #f2f2f2;
+  margin-bottom: 1em;
 }
 
 .tabs {
-    list-style: none;
-    padding: 1em 0 0;
+  list-style: none;
+  padding: 1em 0 0;
 }
 
 .tab {
-    display: inline-block;
-    width: 150px;
-    background-color: #ddd;
-    text-align: center;
-    padding: 12px;
-    margin-right: 8px;
-    font-weight: bold;
-    cursor: pointer;
+  display: inline-block;
+  width: 150px;
+  background-color: #ddd;
+  text-align: center;
+  padding: 12px;
+  margin-right: 8px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .tab:hover,
 .tab:active,
 .tab:focus {
-    background-color: #aaa;
+  background-color: #aaa;
 }
 
 .tab.selected {
-    background-color: #fff;
+  background-color: #fff;
 }
