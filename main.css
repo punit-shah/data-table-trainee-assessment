@@ -12,6 +12,26 @@ body {
   margin: 0;
 }
 
+a {
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+  border-bottom: solid 1px #ddd;
+}
+a:hover,
+a:focus,
+a:active {
+  color: #4078c0;
+  border-bottom: solid 1px #4078c0;
+}
+
+code {
+  font-family: Consolas, Monaco, 'Liberation Mono', Courier, monospace;
+  font-size: 0.85em;
+  padding: 0.2em 4px;
+  background-color: rgba(0,0,0,.04);
+}
+
 .container {
   margin: 0 16px;
   overflow: scroll;
@@ -79,7 +99,7 @@ body {
 .tab:hover,
 .tab:active,
 .tab:focus {
-  background-color: #aaa;
+  background-color: #ccc;
 }
 
 .tab.selected {
