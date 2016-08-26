@@ -88,13 +88,17 @@ body {
   }
 }
 
-@media (min-width: 504px) {
+@media (min-width: 536px) {
   .heading {
     font-size: 2em;
   }
+
+  .container {
+    margin: 0 32px;
+  }
 }
 
-@media (min-width: 980px) {
+@media (min-width: 1040px) {
   .container {
     max-width: 976px;
     margin: 0 auto;
