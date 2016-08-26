@@ -1,6 +1,6 @@
 function makeTable(element, data, channels) {
   var $table = $('<table/>')
-    .addClass('data-table')
+    .addClass('table')
     .append(getTableHeader(channels))
     .append(getTableBody(channels, data));
 

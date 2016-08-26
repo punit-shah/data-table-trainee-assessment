@@ -13,7 +13,7 @@ function initTabs() {
 
 // hides all tab content before showing the element passed in
 function showHideTabContent(selector) {
-    $('[data-tab-content]').hide();
+    $('.tab-content').hide();
     if (selector) {
         $(selector).show();
     }

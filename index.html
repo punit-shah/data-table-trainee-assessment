@@ -9,23 +9,23 @@
   <link href="main.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <div class="container">
-    <h1>data-table-trainee-assessment</h1>
+  <div class="heading">
+    <h1 class="container">data-table-trainee-assessment</h1>
   </div>
 
   <div class="tab-wrapper">
     <ul class="tabs container">
-      <li class="tab" data-shows=".data-table-container">Table</li>
-      <li class="tab" data-shows="#data-chart">Chart</li>
+      <li class="tab" data-shows=".table-container">Table</li>
+      <li class="tab" data-shows=".chart-container .tab-content">Chart</li>
     </ul>
   </div>
 
-  <div class="container">
-    <div class="data-table-container" data-tab-content></div>
-  </div>
+  <div class="container tab-content table-container"></div>
 
-  <div class="container">
-    <canvas id="data-chart" data-tab-content></canvas>
+  <div class="container chart-container">
+    <div class="tab-content">
+      <canvas id="chart"></canvas>
+    </div>
   </div>
 
   <script src="jquery-2.1.1.js"></script>
@@ -47,8 +47,8 @@
     };
 
     $.getJSON('data.json', function (data) {
-      makeTable('.data-table-container', data, channels);
-      makeChart('#data-chart', data, channels);
+      makeTable('.table-container', data, channels);
+      makeChart('#chart', data, channels);
     });
   </script>
 </body>
