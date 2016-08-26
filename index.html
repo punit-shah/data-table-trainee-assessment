@@ -7,26 +7,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <link href="main.css" media="all" rel="stylesheet" type="text/css" />
+  <title>data-table-trainee-assessment</title>
 </head>
 <body>
-  <div class="heading">
-    <h1 class="container">data-table-trainee-assessment</h1>
-  </div>
+  <header class="masthead">
+    <div class="container">
+      <h1 class="heading">data-table-trainee-assessment</h1>
 
-  <div class="tab-wrapper">
-    <ul class="tabs container">
-      <li class="tab" data-shows=".table-container">Table</li>
-      <li class="tab" data-shows=".chart-container .tab-content">Chart</li>
-    </ul>
-  </div>
+      <ul class="tabs">
+        <li class="tab" data-shows=".table-container">Table</li>
+        <li class="tab" data-shows=".chart-container .tab-content">Chart</li>
+      </ul>
+    </div>
+  </header>
 
-  <div class="container tab-content table-container"></div>
+  <section class="container table-container tab-content"></section>
 
-  <div class="container chart-container">
+  <section class="container chart-container">
     <div class="tab-content">
       <canvas id="chart"></canvas>
     </div>
-  </div>
+  </section>
 
   <script src="jquery-2.1.1.js"></script>
   <script src="Chart.min.js"></script>

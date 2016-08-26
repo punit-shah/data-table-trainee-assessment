@@ -17,13 +17,13 @@ body {
   overflow: scroll;
 }
 
-.heading {
-  padding: 0.67em 0;
+.masthead {
   background-color: #f2f2f2;
 }
 
-.heading > h1 {
+.heading {
   font-size: 1.8em;
+  margin: .5em 0;
 }
 
 .table {
@@ -54,6 +54,7 @@ body {
 .tabs {
   list-style: none;
   padding: 1em 0 0;
+  margin: 0;
 }
 
 .tab {
@@ -88,7 +89,7 @@ body {
 }
 
 @media (min-width: 504px) {
-  .heading > h1 {
+  .heading {
     font-size: 2em;
   }
 }
