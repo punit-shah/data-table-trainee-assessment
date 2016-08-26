@@ -38,6 +38,10 @@ body {
   border: solid 1px #ddd;
 }
 
+.table > tbody > tr:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
 .chart-container > .tab-content {
   min-width: 530px;
 }
